@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        main {
+            padding: 1em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Social Media Marketing</h1>
+    </header>
+
+    <main>
+        <h2>Welcome to our multimedia website!</h2>
+        
+        <h3>Video</h3>
+            <video width="320" height="240" controls>
+                <source src="/HTML/pexels-vlada-karpovich-8044824 (1080p).mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+Your browser does not support the audio element.
+        </video>
+
+        <h3>Iframe</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SHds1MuB4WQ?si=_t5MR7E0_bkYjpR9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h3>Sound</h3>
+        <audio controls>
+            <source src="/HTML/horse1-9398.mp3" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+            Your browser does not support the audio tag.
+        </audio>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Multimedia Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
