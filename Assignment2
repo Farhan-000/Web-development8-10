@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: burlywood;
+            margin: 0;
+            padding: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: aliceblue;
+            border-radius: 8px;
+            padding: 80px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form>
+        <h1>Registration Form</h1>
+        <h5>Please fill out this form with the required information</h5>
+        <label for="firstName">Enter your first name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Enter your last name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Enter your password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="accountType">Account Type:</label>
+        <input type="radio" id="personal" name="accountType" value="personal" checked>
+        <label for="personal">Personal</label>
+        <input type="radio" id="business" name="accountType" value="business">
+        <label for="business">Business</label>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I accept the terms and conditions</label>
+
+        <label for="profilePicture">Upload a profile picture:</label>
+        <input type="file" id="profilePicture" name="profilePicture">
+
+        <label for="age">Input your age (years):</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="howHeard">How did you hear about us?</label>
+        <select id="howHeard" name="howHeard" required>
+            <option value="friends">Friends</option>
+            <option value="socialMedia">Social Media</option>
+            <option value="website">Website</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Provide a bio:</label>
+        <textarea id="bio" name="bio" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
